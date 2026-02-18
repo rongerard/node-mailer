@@ -42,7 +42,7 @@ To use the email server:
 1. Install the required Node.js packages for Express, Nodemailer, and dotenv.
 2. Create a `.env` file in the project root and add your email credentials.
 3. Start the server to allow it to listen for email requests.
-4. Send a POST request to the `/send-email` endpoint with a list of recipient emails and optional subject and text messages.
+4. Use the curl-sample.txt template to POST to /send-email with recipients, subject, and message text.
 5. The server sends individual emails to each recipient and returns a success message once completed.
 
 ---
