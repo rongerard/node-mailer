@@ -1,0 +1,35 @@
+# Replace the words below then paste into your bash terminal
+
+
+# 2 recipients
+curl -X POST http://localhost:3000/send-email \
+-H "Content-Type: application/json" \
+-d '{
+    "to": ["recipient1@example.com", "recipient2@example.com"],
+    "surname": ["Surname1", "Surname2"],
+    "account": ["account1@school.edu", "account2@school.edu"]
+}'
+
+
+
+# Many recipients
+curl -X POST http://localhost:3000/send-email \
+-H "Content-Type: application/json" \
+-d '{
+    "to": [
+        "recipient1@example.com",
+        "recipient2@example.com",
+        "recipient3@example.com"
+    ],
+    "surname": [
+        "Surname1",
+        "Surname2",
+        "Surname3"
+    ],
+    "account": [
+        "account1@school.edu",
+        "account2@school.edu",
+        "account3@school.edu"
+    ]
+}'
+
