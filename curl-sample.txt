@@ -1,0 +1,9 @@
+# Replace the words below then paste into your bash terminal
+
+curl -X POST http://localhost:3000/send-email \
+-H "Content-Type: application/json" \
+-d '{
+  "to": ["recipient1@example.com", "recipient2@example.com"],
+  "subject": "Your Email Subject Here",
+  "text": "Your message text here:"
+}'
